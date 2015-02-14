@@ -51,8 +51,8 @@
 
 	define( 'WP_CONTENT_DIR', $WPContentDir );
 
-	// This is forced http, as I don't need SSL, but may need to work out how to get HTTPS working
-	define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
+	// This is forced https, you may want to change this... (or use a filter)
+	define( 'WP_CONTENT_URL', 'https://' . $_SERVER['HTTP_HOST'] . '/content' );
 
 
 	// Absolute path to the WordPress directory.
