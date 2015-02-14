@@ -36,13 +36,13 @@
 	define( 'CONCATENATE_SCRIPTS', true );
 	define( 'SCRIPT_DEBUG', false );
 
-	define( 'WP_ALLOW_MULTISITE', true );
-	define( 'MULTISITE', true );
-	define( 'SUBDOMAIN_INSTALL', true );
-	define( 'DOMAIN_CURRENT_SITE', 'richardtape.com' );
-	define( 'PATH_CURRENT_SITE', '/' );
-	define( 'SITE_ID_CURRENT_SITE', 1 );
-	define( 'BLOG_ID_CURRENT_SITE', 1 );
+	// define( 'WP_ALLOW_MULTISITE', true );
+	// define( 'MULTISITE', true );
+	// define( 'SUBDOMAIN_INSTALL', true );
+	// define( 'DOMAIN_CURRENT_SITE', 'domain.com' );
+	// define( 'PATH_CURRENT_SITE', '/' );
+	// define( 'SITE_ID_CURRENT_SITE', 1 );
+	// define( 'BLOG_ID_CURRENT_SITE', 1 );
 
 	define( 'WP_AUTO_UPDATE_CORE', false );
 
