@@ -1,0 +1,61 @@
+{
+
+	"name":	"yourname/yourproject",
+	"description":	"Example composer.json file for cap deploy",
+	
+	"authors": [
+		{
+			"name": 	"RichardTape",
+			"email": 	"richard@richardtape.com",
+			"homepage": 	"http://www.richardtape.com/"
+		}
+	],
+
+	"minimum-stability": "dev",
+
+	"repositories": [
+
+		{
+			"type": "composer",
+			"url": 	"http://wpackagist.org"
+		},
+
+		{
+            "type": "composer",
+            "url": "http://satis.richardtape.com"
+        }
+
+	],
+
+	"require": {
+
+		"php": 											">=5.3.0",
+		
+		"johnpbloch/wordpress": 								"dev-master",
+
+		"wpackagist-plugin/wordpress-seo": 						"1.*",
+		"wpackagist-plugin/wp-mail-smtp": 						"0.9.5",
+		"wpackagist-plugin/google-analytics-for-wordpress": 			"5.*",
+		"wpackagist-plugin/wp-rainbow-hilite":						"dev-trunk",
+		"wpackagist-plugin/akismet":							"3.0.*",
+		"wpackagist-plugin/custom-contact-forms":					"6.3.*",
+
+		"wpackagist-plugin/memcached":							"2.0.2",
+		"wpackagist-plugin/remove-query-strings-from-static-resources": 	"1.*",
+		"mbcx9rvt/fix-wp-get-attachment-url-https":					"0.1"
+
+	},
+
+	"extra": {
+
+		"wordpress-install-dir": "wp",
+
+		"installer-paths" : {
+			"content/mu-plugins/{$name}/":	["type:wordpress-muplugin"],
+			"content/plugins/{$name}/": 		["type:wordpress-plugin"],
+			"content/themes/{$name}/": 		["type:wordpress-theme"]
+		}
+
+	}
+
+}
